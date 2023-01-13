@@ -74,13 +74,6 @@ public class toolsQA {
         $("#closeLargeModal").click();
 
 
-
-
-
-
-        sleep(3000);
-
-
     }
 
 }
