@@ -53,7 +53,7 @@ public class toolsQA {
         $("#subjectsContainer").click();
         $("#subjectsInput").val("chemistry").pressEnter();
         $$("#hobbiesWrapper .custom-checkbox").get(2).$("label").click();
-        $("#uploadPicture").uploadFile(new File("src/test/data/1.png"));
+        $("#uploadPicture").uploadFile(new File("src/test/resources/1.png"));
         $("#currentAddress-wrapper #currentAddress").setValue("EPRST");
 
         $(byText("Select State")).click();
