@@ -21,7 +21,7 @@ import static java.lang.Thread.sleep;
 public class toolsQA {
 
     @BeforeAll
-    static void beforAll(){
+    static void beforeAll(){
         Configuration.holdBrowserOpen = true;
        // Configuration.browserSize = "1920x1080";
         Configuration.browser = "chrome";
@@ -33,12 +33,11 @@ public class toolsQA {
     }
 
     @Test
-    void testForm () throws InterruptedException {
+    void testForm () {
         String firstName = "T";
         String lastName = "I";
         String month = "May";
         String gender = "Male";
-
 
         $("#firstName").setValue(firstName).pressEnter();
         $("#lastName").setValue(lastName).pressEnter();
@@ -57,7 +56,6 @@ public class toolsQA {
         $("#uploadPicture").uploadFile(new File("src/test/data/1.png"));
         $("#currentAddress-wrapper #currentAddress").setValue("EPRST");
 
-        //setTimeout(function() {debugger}, 4000)
         $(byText("Select State")).click();
         $(byText("Uttar Pradesh")).click();
         $(byText("Select City")).click();
@@ -72,7 +70,6 @@ public class toolsQA {
                 text("Hobbies"), text("Music"), text("Picture"), text("1.png"), text("Address"), text("EPRST"),
                 text("State and City"), text("Uttar Pradesh Agra"));
         $("#closeLargeModal").click();
-
 
     }
 
