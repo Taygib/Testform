@@ -23,7 +23,6 @@ public class toolsQA {
     @BeforeAll
     static void beforeAll(){
         Configuration.holdBrowserOpen = true;
-       // Configuration.browserSize = "1920x1080";
         Configuration.browser = "chrome";
         open("https://demoqa.com/automation-practice-form");
         Selenide.executeJavaScript("$('footer').remove()");
