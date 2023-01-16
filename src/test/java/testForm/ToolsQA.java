@@ -1,27 +1,21 @@
 package testForm;
 
-import com.codeborne.selenide.CollectionCondition;
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byId;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static java.lang.Thread.sleep;
 
-public class toolsQA {
+public class ToolsQA {
 
     @BeforeAll
-    static void beforeAll(){
+    static void beforeAll() {
         Configuration.holdBrowserOpen = true;
         Configuration.browser = "chrome";
         open("https://demoqa.com/automation-practice-form");
@@ -32,7 +26,7 @@ public class toolsQA {
     }
 
     @Test
-    void testForm () {
+    void testForm() {
         String firstName = "T";
         String lastName = "I";
         String month = "May";

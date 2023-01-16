@@ -14,7 +14,7 @@ public class TestBase {
         Configuration.holdBrowserOpen = true;
         Configuration.browser = "chrome";
 
-        new RegistrationPageForm().openPage();
+
 
 
     }

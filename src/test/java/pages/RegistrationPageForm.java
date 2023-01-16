@@ -18,13 +18,15 @@ public class RegistrationPageForm {
     RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
     private final String titleText = "Student Registration Form";
 
-    public void openPage() {
+    public RegistrationPageForm openPage() {
 
         open("https://demoqa.com/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(text(titleText));
         Selenide.executeJavaScript("$('footer').remove()");
         Selenide.executeJavaScript("$('.sidebar-content').remove()");
         Selenide.executeJavaScript("$('#fixedban').remove()");
+
+        return this;
     }
 
     public RegistrationPageForm setFirstName(String value) {

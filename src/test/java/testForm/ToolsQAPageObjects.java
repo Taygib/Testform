@@ -3,7 +3,7 @@ package testForm;
 import org.junit.jupiter.api.Test;
 
 
-public class toolsQAPageObjects extends TestBase {
+public class ToolsQAPageObjects extends TestBase {
 
 
     @Test
@@ -23,7 +23,8 @@ public class toolsQAPageObjects extends TestBase {
         String state = "Uttar Pradesh";
         String city = "Agra";
 
-        registrationPageForm.setFirstName(firstName)
+        registrationPageForm.openPage()
+                .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
                 .setGender(gender)
