@@ -48,7 +48,7 @@ public class RegistrationPageForm {
     }
 
     public RegistrationPageForm setGender(String value) {
-        $(".custom-control").find(byText(value)).click();
+        $("#genterWrapper").find(byText(value)).click();
 
         return this;
     }

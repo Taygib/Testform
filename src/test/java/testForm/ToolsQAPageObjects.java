@@ -1,25 +1,31 @@
 package testForm;
 
+import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
 
+import static utils.RandomUtils.*;
 
-public class ToolsQAPageObjects extends TestBase {
+
+public class ToolsQAPageObjects extends TestBase  {
 
 
     @Test
     void testForm() {
-        String firstName = "T";
-        String lastName = "I";
-        String gender = "Male";
-        String email = "autoqa@mail.ru";
+
+        Faker faker = new Faker();
+
+        String firstName = faker.name().firstName();
+        String lastName = faker.name().lastName();
+        String gender = random(genderName);;
+        String email = faker.internet().emailAddress();
         String year = "2030";
         String day = "17";
         String month = "May";
         String number = "9655555678";
         String subject = "Chemistry";
-        String hobbies = "Music";
+        String hobbies = random(hobbiesName);
         String loadPicture = "src/test/resources/1.png";
-        String address = "EPRST";
+        String address = faker.address().cityName();
         String state = "Uttar Pradesh";
         String city = "Agra";
 
