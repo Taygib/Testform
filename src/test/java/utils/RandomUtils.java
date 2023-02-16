@@ -31,8 +31,8 @@ public class RandomUtils {
     public static String random(String[] values) {
 
 
-        int hobbies = randomInt(0, values.length - 1);
-            return values[hobbies];
+        int randomName = randomInt(0, values.length - 1);
+            return values[randomName];
     }
 
 
