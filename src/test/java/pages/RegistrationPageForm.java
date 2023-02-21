@@ -3,6 +3,7 @@ package pages;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.selector.ByText;
+import org.junit.jupiter.api.Tag;
 import pages.components.CalendarComponent;
 import pages.components.RegistrationResultsModal;
 
@@ -13,6 +14,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
+@Tag("toolsQATest")
 public class RegistrationPageForm {
     CalendarComponent calendarComponent = new CalendarComponent();
     RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();

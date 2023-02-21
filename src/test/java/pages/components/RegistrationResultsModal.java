@@ -1,10 +1,13 @@
 package pages.components;
 
+import org.junit.jupiter.api.Tag;
+
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
+@Tag("toolsQATest")
 public class RegistrationResultsModal {
     public void verifyModalAppears() {
         $(".modal-content").should(appear);

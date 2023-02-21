@@ -1,8 +1,11 @@
 package pages.components;
 
+import org.junit.jupiter.api.Tag;
+
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
+@Tag("toolsQATest")
 public class CalendarComponent {
     public void setDate(String day, String month, String year) {
 

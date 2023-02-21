@@ -2,8 +2,10 @@ package testForm;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import pages.RegistrationPageForm;
 
+@Tag("toolsQATest")
 public class TestBase  {
 
     String [] hobbiesName = {"Sports", "Reading", "Music"};
