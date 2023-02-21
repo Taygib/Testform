@@ -1,11 +1,12 @@
 package testForm;
 
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static utils.RandomUtils.*;
 
-
+@Tag("toolsQATest")
 public class ToolsQAPageObjects extends TestBase  {
 
 

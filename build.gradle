@@ -39,8 +39,8 @@ test {
 }
 
 // для запуска теста из терминала
-task testSimpleTrueFalse(type: Test) {
+task testToolsQA(type: Test) {
     useJUnitPlatform() {
-        includeTags("simple")
+        includeTags("toolsQATest")
     }
 }
