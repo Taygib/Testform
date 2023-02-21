@@ -38,9 +38,15 @@ test {
     useJUnitPlatform{}
 }
 
-// для запуска теста из терминала
+// для запуска теста из терминала или просто по тегам
 task testToolsQA(type: Test) {
     useJUnitPlatform() {
         includeTags("toolsQATest")
+    }
+}
+
+task testTrueFalse(type: Test) {
+    useJUnitPlatform() {
+        includeTags("simple")
     }
 }
