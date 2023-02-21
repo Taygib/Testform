@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import static io.qameta.allure.Allure.step;
 import static utils.RandomUtils.*;
 
 @Tag("toolsQATest")
@@ -12,6 +13,9 @@ public class ToolsQAPageObjects extends TestBase  {
 
     @Test
     void testForm() {
+
+        step("Заполнение формы", ()->{
+
 
         Faker faker = new Faker();
 
@@ -30,6 +34,8 @@ public class ToolsQAPageObjects extends TestBase  {
         String state = "Uttar Pradesh";
         String city = "Agra";
 
+
+
         registrationPageForm.openPage()
                 .setFirstName(firstName)
                 .setLastName(lastName)
@@ -44,6 +50,7 @@ public class ToolsQAPageObjects extends TestBase  {
                 .setState(state)
                 .setCity(city);
 
+
         registrationPageForm.submit();
 
         registrationPageForm.verifyResultModalAppears()
@@ -57,6 +64,8 @@ public class ToolsQAPageObjects extends TestBase  {
                 .verifyResult("Picture", "1.png")
                 .verifyResult("Address", address)
                 .verifyResult("State and City", state + " " + city);
+
+        });
 
         registrationPageForm.close();
 
