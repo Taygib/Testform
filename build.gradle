@@ -36,7 +36,7 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform{}
+    useJUnitPlatform {}
 }
 
 // для запуска теста из терминала или просто по тегам

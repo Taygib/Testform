@@ -66,39 +66,46 @@ public class RegistrationPageForm {
 
         return this;
     }
+
     public RegistrationPageForm setSubject(String value) {
         $("#subjectsContainer").click();
         $("#subjectsInput").val(value).pressEnter();
 
         return this;
     }
+
     public RegistrationPageForm setHobbies(String value) {
         $("#hobbiesWrapper").find(byText(value)).click();
 
         return this;
     }
+
     public RegistrationPageForm setLoadPicture(String value) {
         $("#uploadPicture").uploadFile(new File(value));
 
         return this;
     }
+
     public RegistrationPageForm setAddress(String value) {
         $("#currentAddress-wrapper #currentAddress").setValue(value);
 
         return this;
     }
+
     public RegistrationPageForm setState(String value) {
         $(byText("Select State")).click();
         $(byText(value)).click();
 
         return this;
     }
+
     public RegistrationPageForm setCity(String value) {
         $(byText("Select City")).click();
         $(byText(value)).click();
 
         return this;
     }
+
     public RegistrationPageForm submit() {
         $("#submit").click();
 
@@ -110,6 +117,7 @@ public class RegistrationPageForm {
 
         return this;
     }
+
     public RegistrationPageForm verifyResult(String label, String values) {
         registrationResultsModal.verifyResult(label, values);
 
@@ -121,6 +129,4 @@ public class RegistrationPageForm {
 
         return this;
     }
-
-
 }

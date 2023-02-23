@@ -12,17 +12,14 @@ import pages.RegistrationPageForm;
 
 import java.util.Map;
 
+public class TestBase {
 
-public class TestBase  {
-
-    String [] hobbiesName = {"Sports", "Reading", "Music"};
-    String [] genderName = {"Male", "Female", "Other"};
-
+    String[] hobbiesName = {"Sports", "Reading", "Music"};
+    String[] genderName = {"Male", "Female", "Other"};
     RegistrationPageForm registrationPageForm = new RegistrationPageForm();
 
     @BeforeAll
-    static void beforeAll() {
-        Configuration.holdBrowserOpen = true;
+    static void setUp() {
         Configuration.browser = "chrome";
         Configuration.browserVersion = "100.0";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
@@ -34,13 +31,11 @@ public class TestBase  {
         ));
 
         Configuration.browserCapabilities = capabilities;
-
     }
 
     @BeforeEach
     void addListener() {
-        //SelenideLogger.addListener("allure", new AllureSelenide());
-        SelenideLogger.addListener("testForm", new AllureSelenide());
+        SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
     @AfterEach
@@ -50,6 +45,4 @@ public class TestBase  {
         Attach.browserConsoleLogs();
         Attach.addVideo();
     }
-
-
 }

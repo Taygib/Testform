@@ -22,7 +22,6 @@ public class ToolsQA {
         Selenide.executeJavaScript("$('footer').remove()");
         Selenide.executeJavaScript("$('.sidebar-content').remove()");
         Selenide.executeJavaScript("$('#fixedban').remove()");
-
     }
 
     @Test
@@ -63,7 +62,5 @@ public class ToolsQA {
                 text("Hobbies"), text("Music"), text("Picture"), text("1.png"), text("Address"), text("EPRST"),
                 text("State and City"), text("Uttar Pradesh Agra"));
         $("#closeLargeModal").click();
-
     }
-
 }
