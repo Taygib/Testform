@@ -21,7 +21,7 @@ public class TestBase {
     @BeforeAll
     static void setUp() {
         Configuration.browser = "chrome";
-        Configuration.browserVersion = "100.0";
+        Configuration.browserVersion = "99.0";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
