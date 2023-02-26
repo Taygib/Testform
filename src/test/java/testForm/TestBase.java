@@ -20,8 +20,9 @@ public class TestBase {
 
     @BeforeAll
     static void setUp() {
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "99.0";
+        Configuration.browserSize = System.getProperty("brSize", "1800x900");
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("brVersion", "99.0");
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
