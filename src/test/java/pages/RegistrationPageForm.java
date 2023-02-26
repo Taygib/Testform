@@ -1,8 +1,10 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.selector.ByText;
+import org.junit.jupiter.api.BeforeAll;
 import pages.components.CalendarComponent;
 import pages.components.RegistrationResultsModal;
 
@@ -13,7 +15,6 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-
 public class RegistrationPageForm {
     CalendarComponent calendarComponent = new CalendarComponent();
     RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
@@ -21,7 +22,9 @@ public class RegistrationPageForm {
 
     public RegistrationPageForm openPage() {
 
-        open("https://demoqa.com/automation-practice-form");
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://demoqa.com");
+        open("/automation-practice-form");
+
         $(".practice-form-wrapper").shouldHave(text(titleText));
         Selenide.executeJavaScript("$('footer').remove()");
         Selenide.executeJavaScript("$('.sidebar-content').remove()");

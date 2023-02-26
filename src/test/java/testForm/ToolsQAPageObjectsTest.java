@@ -91,49 +91,17 @@ public class ToolsQAPageObjectsTest extends TestBase {
 
         step("Проверка заполнение формы в всплывающем окне после submit", () -> {
 
-            step("Проверка всплывающего окна", () -> {
-                registrationPageForm.verifyResultModalAppears();
-            });
-
-            step("Проверка Student Name: FirstName и LastName", () -> {
-                registrationPageForm.verifyResult("Student Name", firstName + " " + lastName);
-            });
-
-            step("Проверка Student Email", () -> {
-                registrationPageForm.verifyResult("Student Email", email);
-            });
-
-            step("Проверка Gender", () -> {
-                registrationPageForm.verifyResult("Gender", gender);
-            });
-
-            step("Проверка Mobile", () -> {
-                registrationPageForm.verifyResult("Mobile", number);
-            });
-
-            step("Проверка Date of Birth", () -> {
-                registrationPageForm.verifyResult("Date of Birth", day + " " + month + "," + year);
-            });
-
-            step("Проверка Subjects", () -> {
-                registrationPageForm.verifyResult("Subjects", subject);
-            });
-
-            step("Проверка Hobbies", () -> {
-                registrationPageForm.verifyResult("Hobbies", hobbies);
-            });
-
-            step("Проверка Picture", () -> {
-                registrationPageForm.verifyResult("Picture", "1.png");
-            });
-
-            step("Проверка Address", () -> {
-                registrationPageForm.verifyResult("Address", address);
-            });
-
-            step("Проверка State and City", () -> {
-                registrationPageForm.verifyResult("State and City", state + " " + city);
-            });
+            registrationPageForm.verifyResultModalAppears()
+                    .verifyResult("Student Name", firstName + " " + lastName)
+                    .verifyResult("Student Email", email)
+                    .verifyResult("Gender", gender)
+                    .verifyResult("Mobile", number)
+                    .verifyResult("Date of Birth", day + " " + month + "," + year)
+                    .verifyResult("Subjects", subject)
+                    .verifyResult("Hobbies", hobbies)
+                    .verifyResult("Picture", "1.png")
+                    .verifyResult("Address", address)
+                    .verifyResult("State and City", state + " " + city);
         });
 
         step("Закрыть всплывающее окно формы", () -> {
