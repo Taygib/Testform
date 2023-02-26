@@ -1,1 +1,0 @@
-{"uuid":"a8255d3c-0883-4210-b077-873e9c877ea7","name":"ToolsQAPageObjects","children":["01346c3b-9d41-4a1b-9047-20ab52dc6199"],"befores":[{"name":"beforeAll","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1677008651405,"stop":1677008651431}],"afters":[],"start":1677008651339,"stop":1677008660313}

@@ -38,6 +38,17 @@ dependencies {
 test {
     useJUnitPlatform {}
 }
+tasks.withType(Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform()
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
 
 // для запуска теста из терминала или просто по тегам
 task testToolsQA(type: Test) {
@@ -50,4 +61,18 @@ task testTrueFalse(type: Test) {
     useJUnitPlatform() {
         includeTags("simple")
     }
+}
+
+task PropertyTest(type: Test) {
+    useJUnitPlatform() {
+        includeTags("Property4")
+    }
+
+}
+
+task Property5Test(type: Test) {
+    useJUnitPlatform() {
+        includeTags("Property5_Test")
+    }
+
 }
