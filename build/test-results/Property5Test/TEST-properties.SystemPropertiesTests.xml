@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="properties.SystemPropertiesTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-26T14:14:47" hostname="LAPTOP-57D3LCEV" time="0.121">
+  <properties/>
+  <testcase name="simpleProperty5Test()" classname="properties.SystemPropertiesTests" time="0.121"/>
+  <system-out><![CDATA[Hello, Alex Egorov
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
