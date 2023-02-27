@@ -24,8 +24,6 @@ public class RegistrationPageForm {
 
         Configuration.baseUrl = System.getProperty("baseUrl", "https://demoqa.com");
         open("/automation-practice-form");
-        //open("https://demoqa.com/automation-practice-form");
-
 
         $(".practice-form-wrapper").shouldHave(text(titleText));
         Selenide.executeJavaScript("$('footer').remove()");

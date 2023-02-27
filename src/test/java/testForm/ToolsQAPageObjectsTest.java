@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 import static utils.RandomUtils.*;
 
-
 public class ToolsQAPageObjectsTest extends TestBase {
 
     @Test
