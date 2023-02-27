@@ -7,10 +7,11 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 import static utils.RandomUtils.*;
 
-@Tag("toolsQATest")
+
 public class ToolsQAPageObjectsTest extends TestBase {
 
     @Test
+    @Tag("toolsQATest")
     void formTest() {
 
         Faker faker = new Faker();
