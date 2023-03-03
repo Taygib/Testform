@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testForm.ToolsQAPageObjectsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-27T20:33:13" hostname="LAPTOP-57D3LCEV" time="28.157">
+<testsuite name="testForm.ToolsQAPageObjectsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-02T23:23:33" hostname="LAPTOP-57D3LCEV" time="22.631">
   <properties/>
-  <testcase name="formTest()" classname="testForm.ToolsQAPageObjectsTest" time="28.157"/>
+  <testcase name="formTest()" classname="testForm.ToolsQAPageObjectsTest" time="22.631"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-февр. 27, 2023 11:33:13 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+мар. 03, 2023 2:23:34 AM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
 INFO: Using OpenTelemetry for tracing
-февр. 27, 2023 11:33:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+мар. 03, 2023 2:23:42 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1800x900
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=99.0.4844.51 Platform=LINUX
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.3.5
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.1.2 build revision: 9a5a329c5a
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: RemoteWebDriver -> RemoteWebDriver: chrome on LINUX (813bfab67a867f69bffa30abc02ba0ad)
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: RemoteWebDriver -> RemoteWebDriver: chrome on LINUX (08930e9aeb0162e4689da2bb005cee0c)
 ]]></system-err>
 </testsuite>
